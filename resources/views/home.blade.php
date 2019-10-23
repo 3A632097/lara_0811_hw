@@ -64,7 +64,10 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+    <a href="{{ route('about.index') }}">關於本站</a>
+    <a href="{{ route('news.index') }}">最新消息</a>
+
+    <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -81,7 +84,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                 首頁
                 </div>
 
                 <div class="links">
